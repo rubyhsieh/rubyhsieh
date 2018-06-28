@@ -25,7 +25,7 @@
 
         header>h1 {
             margin-top: 11px;
-            font-size: 34px;
+            font-size: 30px;
             font-weight: bold;
             line-height: 1.32;
         }
@@ -323,6 +323,106 @@
                 width: 700px;
             }
         }
+        @media screen and (max-width:768px) {
+            .header-logobox {
+                padding-bottom: 45%;
+                position: relative;
+                margin-bottom: 55 px;
+            }
+            .liver-logo {
+                position: absolute;
+                left: 32%;
+                width: 35%;
+            }
+            .line {
+                position: absolute;
+                left: 0%;
+                top: 95%;
+                width: 100%;
+                height: 1%
+            }
+            .law {
+                position: absolute;
+                left: 15%;
+                top: 96%;
+                width: 18%;
+            }
+            .economics {
+                position: absolute;
+                left: 40.5%;
+                top: 96%;
+                width: 18%;
+            }
+            .education {
+                position: absolute;
+                left: 65.5%;
+                top: 96%;
+                width: 18%;
+            }
+            .fb {
+                position: absolute;
+                right: 8%;
+                top: 7%;
+                width: 6%;
+            }
+            .ig {
+                position: absolute;
+                right: 0%;
+                top: 7%;
+                width: 6%;
+            }
+
+        }
+
+
+        @media screen and (min-width: 768px) {
+            .header-logobox {
+                padding-bottom: 20%;
+                position: relative;
+            }
+            .liver-logo {
+                position: absolute;
+                left: 0;
+                width: 20%
+            }
+            .line {
+                position: absolute;
+                right: 0%;
+                top: 35%;
+                width: 75%;
+                height: 1%
+            }
+            .law {
+                position: absolute;
+                left: 35%;
+                top: 36%;
+                width: 15%;
+            }
+            .economics {
+                position: absolute;
+                left: 55%;
+                top: 36%;
+                width: 15%;
+            }
+            .education {
+                position: absolute;
+                left: 75%;
+                top: 36%;
+                width: 15%;
+            }
+            .fb {
+                position: absolute;
+                right: 4%;
+                top: 2%;
+                width: 3%;
+            }
+            .ig {
+                position: absolute;
+                right: 0%;
+                top: 2%;
+                width: 3%;
+            }
+        }
     </style>
 
 </head>
@@ -330,25 +430,18 @@
 <body style="font-family: Microsoft JhengHei, " Noto Sans TC ", "PingFang TC ", "Apple LiGothic Medium ", Roboto, "Lucida
     Grande ", "Lucida Sans Unicode ", sans-serif; background-color: #fff">
     <header>
-        <figure style="margin-top: 20px; margin-bottom: 30px ">
-            <img src="phone-01.png" alt="header" width="100%" />
-        </figure>
-    </header>
-    <!--
-    <header class="header">
-        <table style="width:100% ">
-            <tbody>
-                <tr>
-                    <td>
-                        <div class="logo"></div>
-                    </td>
-                    <td style="width:22px">
-                        <div class="menu"></div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </header>-->
+            <div class="header-logobox" style="margin-bottom: 50px">
+                <figure>
+                    <img src="logo.png" alt="logo" class="liver-logo">
+                    <img src="分隔線.png" alt="line" class="line">
+                    <img src="司法人權.png" alt="law" class="law">
+                    <img src="產業經濟.png" alt="economics" class="economics">
+                    <img src="教育文化.png" alt="education" class="education">
+                    <img src="fb.png" alt="fb" class="fb">
+                    <img src="ig.png" alt="ig" class="ig">
+                </figure>
+            </div>
+        </header> 
 
     <article>
         <div style=" width: 100% ; max-width :900px ; margin: 0 auto ; height: 2px ; background-color: #2d2d2d ">
@@ -361,8 +454,8 @@
             <figure style="margin-top: 30px; width: 100% ">
                 <img src="homephoto.jpg" alt="leading image of this article" width="100%" />
             </figure>
-            <h1 style="margin-top: 30px; margin-left: calc(157/1024*100%) ">它「衣舊」美麗，但「衣燃」不環保</h1>
-            <span style="padding-bottom:5px ; border-bottom-width: 2px ; border-bottom-color: #E59F23 ; border-bottom-style : solid">
+            <h1 style="margin-top: 30px; margin-left: calc(157/1024*100%); font-size:30px">它「衣舊」美麗，但「衣燃」不環保</h1>
+            <span style=" padding-bottom:2px ; border-bottom-width: 2px ; border-bottom-color: #E59F23 ; border-bottom-style : solid">
                 視覺化
             </span>
             <p class="intro" style="position: relative ; margin-top: -20px ">
@@ -412,42 +505,7 @@
                     <span class="sr-only">Next</span>
                 </a>
         </div>
-        <!--<div class="flex-article">
-
-            <a href="http://www.unews.nccu.edu.tw/unews/%E7%A4%BE%E7%BE%A4%E8%A1%8C%E9%8A%B7%E9%9B%A3%E9%95%B7%E4%B9%85%e3%80%80%E5%BC%B1%E5%8B%A2%E8%A1%97%E8%B3%A3%E8%80%85%E7%9A%84%E4%B8%8B%E4%B8%80%E7%AB%99%E5%9C%A8%E5%93%AA%E8%A3%A1%EF%BC%9F/"
-                target="_blank">
-                <div class="item">
-                    <figure class="article-photo">
-                        <img src="right01.jpg" alt="a photo" width="250px" max-width="calc(150/1024)*100%">
-                    </figure>
-                    <div class="text-box"></div>
-                    <div class="article-text">社群行銷難長久　弱勢街賣者的下一站在哪裡？</div>
-                </div>
-            
-
-
-                <a href="https://paiyulun.github.io/intro/comment/15thgayparade#" target="_blank">
-                    <div class="item">
-                        <figure class="article-photo">
-                            <img src="right02.jpg" alt="a photo" width="250px" max-width="calc(200/1024)*100%">
-                        </figure>
-                        <div class="text-box"></div>
-                        <div class="article-text">白育綸觀點》後同婚時代15年性平運動何去何從</div>
-                    </div>
-                </a>
-
-
-                <a href="http://www.unews.nccu.edu.tw/unews/%E8%A3%9C%E8%B5%B7%E7%A4%BE%E6%9C%83%E9%98%B2%E8%AD%B7%E7%B6%B2%e3%80%80%E6%88%90%E5%B9%B4%E8%A7%80%E8%AD%B7%E4%BA%BA%E7%9A%84%E8%81%B7%E8%B2%AC%E6%83%B3%E5%83%8F%E8%88%87%E8%A1%9D%E7%AA%81/"
-                    target="_blank">
-                    <div class="item">
-                        <figure class="article-photo">
-                            <img src="right03.jpg" alt="a photo" width="250px" max-width="calc(200/1024)*100%">
-                        </figure>
-                        <div class="text-box"></div>
-                        <div class="article-text">補起社會防護網　成年觀護人的職責想像與衝突</div>
-                    </div>
-                </a>
-        </div>-->
+        
 
         <div class="title-box" style="background-color: #F1F1F1">
             <div class="title">
@@ -484,39 +542,7 @@
                     <span class="sr-only">Next</span>
                 </a>
         </div>
-        <!-- <div class="flex-article" style="background-color: #F1F1F1">
-            <a href="http://www.unews.nccu.edu.tw/unews/%E8%B3%BD%E9%B4%BF/" target="_blank">
-                <div class="item">
-                    <figure class="article-photo">
-                        <img src="industry01.jpg" alt="a photo" width="250px" max-width="calc(150/1024)*100%">
-                    </figure>
-                    <div class="text-box"></div>
-                    <div class="article-text">在天空飛翔的鈔票　賽鴿利益解密與合法化之路</div>
-                </div>
-            </a>
-
-
-            <a href="https://cool87031k.github.io/doll-machine/" target="_blank">
-                <div class="item">
-                    <figure class="article-photo">
-                        <img src="industry02.JPG" alt="a photo" width="250px" max-width="calc(200/1024)*100%">
-                    </figure>
-                    <div class="text-box"></div>
-                    <div class="article-text">夾娃娃機店的今生未來，是突圍還是泡沫？</div>
-                </div>
-            </a>
-
-            <a href="http://www.unews.nccu.edu.tw/unews/%E7%B4%85%E6%AF%AF%E5%89%8D%E7%9A%84%E5%B9%95%E5%BE%8C%E5%B7%A5%E4%BD%9C%E8%80%85%e3%80%80%E4%BF%83%E5%B9%B8%E7%A6%8F%E7%94%A2%E6%A5%AD%E5%86%8D%E5%8D%87%E7%B4%9A/"
-                target="_blank">
-                <div class="item">
-                    <figure class="article-photo">
-                        <img src="industry03.jpg" alt="a photo" width="250px" max-width="calc(200/1024)*100%">
-                    </figure>
-                    <div class="text-box"></div>
-                    <div class="article-text">紅毯前的幕後工作者　促幸福產業再升級</div>
-                </div>
-            </a>
-        </div>-->
+       
 
 
         <div class="title-box">
@@ -553,41 +579,10 @@
                     <span class="sr-only">Next</span>
                 </a>
         </div>
-        <!--<div class="flex-article" style="min-height: 340px">
-
-            <a href="https://wenrongchang.github.io/Crazy-all-nighter/104405016/practice.html" target="_blank">
-                <div class="item">
-                    <figure class="article-photo">
-                        <img src="photo01.jpg" alt="a photo" width="250px" max-width="calc(150/1024)*100%">
-                    </figure>
-                    <div class="text-box" style="height: 123px"></div>
-                    <div class="article-text">【當老師不再是鐵飯碗 1】代理教師擔起少子化的必然與不公</div>
-                </div>
-            </a>
-
-            <a href="https://wenrongchang.github.io/Crazy-all-nighter/104405016/teacher02.html" target="_blank">
-                <div class="item">
-                    <figure class="article-photo">
-                        <img src="photo03.JPG" alt="a photo" width="250px" max-width="calc(200/1024)*100%">
-                    </figure>
-                    <div class="text-box" style="height: 123px"></div>
-                    <div class="article-text">【當老師不再是鐵飯碗 2】代理教師陷重重困境　燃燒熱忱何以為繼</div>
-                </div>
-            </a>
-
-            <a href="https://wenrongchang.github.io/Crazy-all-nighter/104405016/teacher03.html" target="_blank">
-                <div class="item">
-                    <figure class="article-photo">
-                        <img src="photo02.JPG" alt="a photo" width="250px" max-width="calc(200/1024)*100%">
-                    </figure>
-                    <div class="text-box" style="height: 123px"></div>
-                    <div class="article-text">【當老師不再是鐵飯碗 3】提升代理教師待遇　保障學生受教權</div>
-                </div>
-            </a>
-        </div>-->
+       
     </article>
 </body>
-<!-- Global site tag (gtag.js) - Google Analytics -->
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121184139-2"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
@@ -596,7 +591,6 @@
     gtag('config', 'UA-121184139-2');
 </script>
 
-<!-- Hotjar Tracking Code for https://wenrongchang.github.io/crazy-all-nighter/104405016/index.html -->
 <script>
     (function (h, o, t, j, a, r) {
         h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
